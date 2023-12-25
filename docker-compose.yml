@@ -1,0 +1,73 @@
+version: '3.8'
+
+services:
+  postgresql:
+    container_name: ${PROJECT_NAME}_db
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: user
+      POSTGRES_DB: db
+      POSTGRES_HOST: localhost
+    ports:
+      - '5432:5432'
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      backend:
+        ipv4_address: 10.10.10.6
+
+  vuejs:
+    container_name: ${PROJECT_NAME}_ui
+    build: ./client
+    command: yarn dev --host
+    volumes:
+      - ./client:/app/client
+    ports:
+      - '5173:5173'
+    expose:
+      - '5173'
+    links:
+      - postgresql
+    networks:
+      backend:
+        ipv4_address: 10.10.10.7
+    depends_on:
+      - postgresql
+  web:
+    container_name: ${PROJECT_NAME}_web
+    build: ./server
+    volumes:
+      - ./server:/app/server
+    ports:
+      - '8000:8000'
+    expose:
+      - '8000'
+    links:
+      - vuejs
+    networks:
+      backend:
+        ipv4_address: 10.10.10.5
+    depends_on:
+      - vuejs
+    environment:
+      DJANGO_SUPERUSER_USERNAME: ${DJANGO_SUPERUSER_USERNAME}
+      DJANGO_SUPERUSER_EMAIL: ${DJANGO_SUPERUSER_EMAIL}
+      DJANGO_SUPERUSER_PASSWORD: ${DJANGO_SUPERUSER_PASSWORD}
+      DJANGO_SUPERUSER_FIRST_NAME: ${DJANGO_SUPERUSER_FIRST_NAME}
+      DJANGO_SUPERUSER_LAST_NAME: ${DJANGO_SUPERUSER_LAST_NAME}
+    command: >
+      sh -c "python manage.py makemigrations && python manage.py migrate &&  python manage.py createsuperuser --no-input --username=${DJANGO_SUPERUSER_USERNAME} 2>&1 || true && python manage.py runserver 0.0.0.0:8000"
+    
+
+
+networks:
+  backend:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.10.10.0/24
+
+volumes:
+  db_data:
