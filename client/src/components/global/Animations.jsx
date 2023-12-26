@@ -11,7 +11,7 @@ export default function PlayOnce({ ICON }) {
     return () => clearInterval(interval);
   }, []);
 
-  return <Player ref={playerRef} icon={ICON} size={200} />;
+  return <Player ref={playerRef} icon={ICON} size={180} />;
 }
 
 PlayOnce.propTypes = {

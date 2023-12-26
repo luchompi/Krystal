@@ -1,11 +1,16 @@
 import CardLayout from "../../layout/CardLayout";
-
-const Home = () => {
+import ICON from "../../assets/json/ICON.json";
+const HomePage = () => {
   return (
     <div>
-      <CardLayout />
+      <CardLayout
+        cardIcon={ICON}
+        cardHeader={"Krystal"}
+        cardText={"Su sistema de inventario y facturación"}
+        cardTitle={"¡Bienvenido a Krystal!"}
+      />
     </div>
   );
 };
 
-export default Home;
+export default HomePage;
