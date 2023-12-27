@@ -1,12 +1,17 @@
 import { create } from 'zustand'
 
-const SesionStore = create((set) => ({
+const sesionStore = create((set) => ({
     PAT: null,
     RAT: null,
-    userData: [],
-    isAuth: false,
-    setTokens: (data) => set({ PAT: data.access, RAT: data.refresh, isAuth: true }),
-    destroySesion: () => set({ PAT: null, RAT: null, isAuth: false }),
+    isLogged: false,
+    userData: {},
+    counter: 0,
+    isLoading: false,
+    setTokens: (data) => set(() => ({ PAT: data.access, RAT: data.refresh, isLogged: true })),
+    setUserData: (data) => set(() => ({ userData: data })),
+    incrementCounter: () => set(state => ({ counter: state.counter + 1 })),
+    alterLoading: (status) => set(() => ({ isLoading: status })),
+    destroySesion: () => set(() => ({ PAT: null, RAT: null, isLogged: false, userData: [], counter: 0 }))
 }))
 
-export default SesionStore
+export default sesionStore

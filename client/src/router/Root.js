@@ -1,19 +1,18 @@
-import { createBrowserRouter } from "react-router-dom"
-import App from "../pages/App"
-import HomePage from "../pages/principal/Home"
+import { createBrowserRouter } from "react-router-dom";
+import App from "../apps/App.jsx";
+import principalRoutes from "./principal.router.js";
+import authRoutes from "./auth.router.js";
+
 
 const Root = createBrowserRouter([
     {
         path: "/",
         Component: App,
         children: [
-            {
-                path: "/",
-                exact: true,
-                Component: HomePage
-            }
+            ...Array.from(principalRoutes),
+            ...Array.from(authRoutes),
         ]
-    }
+    },
 ])
 
-export default Root
+export default Root;
