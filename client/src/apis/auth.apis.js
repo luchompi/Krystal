@@ -13,3 +13,8 @@ export const obtenerDatosUsuario = () => {
         }
     })
 }
+
+export const crearUsuario = (data) => {
+    console.log(data)
+    return apiv1.post('users/', data)
+}

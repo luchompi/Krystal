@@ -15,7 +15,7 @@ export const successMessage = (title, message) => {
 }
 
 export const errorMessage = (error) => {
-    const errorArray = data;
+    const errorArray = error;
     let errorMessage = ''
     try {
         for (const field in errorArray) {
