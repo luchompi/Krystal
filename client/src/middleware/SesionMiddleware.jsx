@@ -35,12 +35,12 @@ export const LogoutPreventor = () => {
     const [show, setShow] = useState(false);
     const {destroySesion, resetCounter, counter} = sesionStore((state) => state);
     const navigate = useNavigate();
-    if (counter >= 18) {
+    if (counter >= 1800000) {
         destroySesion();
         infoMessage("La sesión ha expirado, por favor inicie sesión nuevamente");
         setShow(false);
         navigate("/");
-    } else if (counter > 5 && counter < 8 && !show) {
+    } else if (counter > 1350000 && counter < 1800000 && !show) {
         setShow(true)
         handleMessage()
             .then((response) => {
