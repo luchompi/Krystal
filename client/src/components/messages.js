@@ -71,7 +71,7 @@ export const questionMessageForPreventLogout = (title, message) => {
         title: title,
         text: message,
         icon: 'warning',
-        confirmButtonText: "Sí",
+        confirmButtonText: "Estoy Aquí",
         allowOutsideClick: false,
         allowEscapeKey: false,
         allowEnterKey: false,

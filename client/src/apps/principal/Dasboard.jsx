@@ -1,7 +1,10 @@
 import React from "react";
+import {RedirectIfAuthRequired} from "../../middleware/SesionMiddleware.jsx";
 
 const Dasboard = () => {
-  return <div>Bienvenido</div>;
+    RedirectIfAuthRequired();
+    document.title = "Dashboard | Krystal App"
+    return <div>Bienvenido</div>;
 };
 
 export default Dasboard;

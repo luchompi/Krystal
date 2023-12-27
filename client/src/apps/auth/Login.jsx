@@ -5,6 +5,7 @@ import {login, obtenerDatosUsuario} from "../../apis/auth.apis";
 import sesionStore from "../../store/sesion.store.js";
 import {errorMessage, successMessage} from "../../components/messages.js";
 import {useNavigate} from "react-router-dom";
+import {RedirectIfAuth} from "../../middleware/SesionMiddleware.jsx";
 
 const getUserData = async () => {
     const response = await obtenerDatosUsuario();
@@ -90,6 +91,7 @@ const LoginForm = () => {
 
 const Login = () => {
     document.title = "Login | Krystal App";
+    RedirectIfAuth()
     return (
         <div className="col col-lg-6">
             <CardLayout
@@ -97,7 +99,6 @@ const Login = () => {
                 title="Inicio de Sesión"
                 icon={Fingerprint}
                 component={<LoginForm/>}
-                iconSize={100}
             />
         </div>
     );
