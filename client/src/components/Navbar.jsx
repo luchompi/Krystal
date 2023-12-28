@@ -164,9 +164,6 @@ const Navbar = ({dateTime}) => {
                                     Sesión iniciada como {userData?.username}{" "}
                                 </button>
                                 <div className="dropdown-menu">
-                                    <a className="dropdown-item" href="#">
-                                        Perfil de usuario{" "}<i className="ri-account-pin-circle-line"></i>
-                                    </a>
                                     <Link to={`/change-password`} className="dropdown-item" href="#">
                                         Cambiar contraseña{" "}<i className="ri-shield-keyhole-line"></i>
                                     </Link>
