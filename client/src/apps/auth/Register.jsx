@@ -32,7 +32,6 @@ const RegisterForm = () => {
         navigate("/success-register");
       })
       .catch((error) => {
-      
         errorMessage(error.response.data);
       })
       .finally(() => {
@@ -115,6 +114,7 @@ const RegisterForm = () => {
 };
 
 const Register = () => {
+  document.title = "Registro de usuarios | Krystal App";
   RedirectIfAuth();
   return (
     <div className="col col-lg-6">

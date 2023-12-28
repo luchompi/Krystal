@@ -15,6 +15,9 @@ export const obtenerDatosUsuario = () => {
 }
 
 export const crearUsuario = (data) => {
-    console.log(data)
     return apiv1.post('users/', data)
+}
+
+export const activar = (data) => {
+    return apiv1.post('users/activation/', data)
 }
