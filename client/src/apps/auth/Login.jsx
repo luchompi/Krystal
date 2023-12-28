@@ -4,7 +4,7 @@ import {useState} from "react";
 import {login, obtenerDatosUsuario} from "../../apis/auth.apis";
 import sesionStore from "../../store/sesion.store.js";
 import {errorMessage, successMessage} from "../../components/messages.js";
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {RedirectIfAuth} from "../../middleware/SesionMiddleware.jsx";
 
 const getUserData = async () => {
@@ -84,6 +84,7 @@ const LoginForm = () => {
                 <button type="submit" className="btn btn-primary">
                     Ingresar <i className="ri-door-open-line"></i>
                 </button>
+                <Link to={`/change-password`} className="text-muted">¿Olvidó su contraseña?</Link>
             </form>
         </>
     );

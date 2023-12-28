@@ -6,7 +6,7 @@ export const login = (data) => {
 }
 
 export const obtenerDatosUsuario = () => {
-    const { PAT } = sesionStore.getState()
+    const {PAT} = sesionStore.getState()
     return apiv1.get('users/me/', {
         headers: {
             Authorization: `JWT ${PAT}`
@@ -20,4 +20,12 @@ export const crearUsuario = (data) => {
 
 export const activar = (data) => {
     return apiv1.post('users/activation/', data)
+}
+
+export const cambiarContrasena = (data) => {
+    return apiv1.post('users/reset_password/', data)
+}
+
+export const confirmarCambioContrasena = (data) => {
+    return apiv1.post('users/reset_password_confirm/', data)
 }
