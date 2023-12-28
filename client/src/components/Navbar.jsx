@@ -165,10 +165,10 @@ const Navbar = ({dateTime}) => {
                                 </button>
                                 <div className="dropdown-menu">
                                     <a className="dropdown-item" href="#">
-                                        Perfil de usuario{" "}
+                                        Perfil de usuario{" "}<i className="ri-account-pin-circle-line"></i>
                                     </a>
                                     <Link to={`/change-password`} className="dropdown-item" href="#">
-                                        Cambiar contraseña{" "}
+                                        Cambiar contraseña{" "}<i className="ri-shield-keyhole-line"></i>
                                     </Link>
                                     <hr className="dropdown-divider"/>
                                     <a onClick={salir} className="dropdown-item">
