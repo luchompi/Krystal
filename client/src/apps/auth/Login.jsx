@@ -6,6 +6,7 @@ import sesionStore from "../../store/sesion.store.js";
 import {errorMessage, successMessage} from "../../components/messages.js";
 import {Link, useNavigate} from "react-router-dom";
 import {RedirectIfAuth} from "../../middleware/SesionMiddleware.jsx";
+import DataLoader from "../../hooks/data.loader.jsx";
 
 const getUserData = async () => {
     const response = await obtenerDatosUsuario();
@@ -13,6 +14,7 @@ const getUserData = async () => {
 };
 
 const LoginForm = () => {
+    const dataLoader = DataLoader();
     const [data, setData] = useState({
         username: "",
         password: "",
@@ -38,10 +40,7 @@ const LoginForm = () => {
                 successMessage("Bienvenido", "Sesión iniciada correctamente");
             })
             .then(() => {
-                getUserData()
-                    .then((Response) => {
-                        setUserData(Response);
-                    })
+                dataLoader()
                 navigate("/dashboard");
             })
             .catch((error) => {
