@@ -9,7 +9,7 @@ import {
 } from "../../components/messages.js";
 import { eliminarElemento } from "../../apis/inventario.apis.js";
 import sesionStore from "../../store/sesion.store.js";
-
+import { RedirectIfAuthRequired } from "../../middleware/SesionMiddleware.jsx";
 const List = () => {
   const { inventario, removeElement } = inventarioStore((state) => state);
   const { alterLoading } = sesionStore((state) => state);
@@ -22,7 +22,6 @@ const List = () => {
     );
     if (ans) {
       alterLoading(true);
-
       await eliminarElemento(id)
         .then((Response) => {
           removeElement(id);
@@ -105,6 +104,7 @@ const List = () => {
 };
 
 const InventarioList = () => {
+  RedirectIfAuthRequired();
   return (
     <div className="col col-lg-11">
       <CardLayout
