@@ -17,7 +17,7 @@ class InventarioController(APIView):
         if queryset := self.get_elemento(id):
             serializer = InventarioSerializer(queryset)
         else:
-            queryset = Inventario.objects.all()
+            queryset = Inventario.objects.order_by('-id')[:10]
             serializer = InventarioSerializer(queryset, many=True)
         return Response(serializer.data)
 
