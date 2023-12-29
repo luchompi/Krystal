@@ -7,3 +7,7 @@ export const obtenerInventario = () => {
 export const crearElemento = (elemento) => {
     return apiv1.post("inventario/", elemento);
 }
+
+export const eliminarElemento = (id) => {
+    return apiv1.delete(`inventario/${id}/`);
+}

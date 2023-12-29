@@ -1,23 +1,40 @@
 import Chart from "../../assets/json/Chart.json";
 import CardLayout from "../../layouts/CardLayout.jsx";
-import { obtenerInventario } from "../../apis/inventario.apis.js";
-import { errorMessage } from "../../components/messages.js";
-import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import inventarioStore from "../../store/inventario.store.js";
+import {
+  confirmMessage,
+  errorMessage,
+  successMessage,
+} from "../../components/messages.js";
+import { eliminarElemento } from "../../apis/inventario.apis.js";
+import sesionStore from "../../store/sesion.store.js";
 
 const List = () => {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    fetchData();
-  }, []);
-  const fetchData = async () => {
-    await obtenerInventario()
-      .then((Response) => {
-        setData(Response.data);
-      })
-      .catch((error) => {
-        errorMessage(error.response.data);
-      });
+  const { inventario, removeElement } = inventarioStore((state) => state);
+  const { alterLoading } = sesionStore((state) => state);
+  const deleteElemento = async (id) => {
+    const ans = await confirmMessage(
+      `Eliminar elemento con id ${id}`,
+      "¿Está seguro de eliminar el elemento?",
+      "Sí, eliminar",
+      "No, cancelar"
+    );
+    if (ans) {
+      alterLoading(true);
+
+      await eliminarElemento(id)
+        .then((Response) => {
+          removeElement(id);
+          successMessage("Elemento eliminado", "El elemento fue eliminado");
+        })
+        .catch((error) => {
+          errorMessage(error.response.data);
+        })
+        .finally(() => {
+          alterLoading(false);
+        });
+    }
   };
   return (
     <div>
@@ -36,7 +53,6 @@ const List = () => {
           </div>
         </div>
         <div className="card-body">
-          {/** Aqui va la tabla */}
           <table className="table table-striped table-hover">
             <thead>
               <tr>
@@ -51,7 +67,7 @@ const List = () => {
               </tr>
             </thead>
             <tbody>
-              {data.map((elemento, index) => (
+              {inventario.map((elemento, index) => (
                 <tr key={index}>
                   <th scope="row">{elemento.id}</th>
                   <td>{elemento.nombre}</td>
@@ -69,7 +85,11 @@ const List = () => {
                       <button type="button" className="btn btn-warning">
                         <i className="ri-pencil-line"></i>
                       </button>
-                      <button type="button" className="btn btn-danger">
+                      <button
+                        type="button"
+                        className="btn btn-danger"
+                        onClick={() => deleteElemento(elemento.id)}
+                      >
                         <i className="ri-delete-bin-line"></i>
                       </button>
                     </div>
