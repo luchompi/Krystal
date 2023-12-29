@@ -51,7 +51,7 @@ export const confirmMessage = (title, message, confirmButtonText, cancelButtonTe
         allowEscapeKey: false,
         allowEnterKey: false
     }).then((result) => {
-        return result.isConfirmed ? callback() : false
+        return result.isConfirmed
     })
 }
 
