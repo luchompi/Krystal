@@ -1,7 +1,8 @@
-import { createBrowserRouter } from "react-router-dom";
+import {createBrowserRouter} from "react-router-dom";
 import App from "../apps/App.jsx";
 import principalRoutes from "./principal.router.js";
 import authRoutes from "./auth.router.js";
+import inventarioRoutes from "./inventario.routes.js";
 
 
 const Root = createBrowserRouter([
@@ -11,6 +12,7 @@ const Root = createBrowserRouter([
         children: [
             ...Array.from(principalRoutes),
             ...Array.from(authRoutes),
+            ...Array.from(inventarioRoutes)
         ]
     },
 ])

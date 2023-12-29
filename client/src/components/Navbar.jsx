@@ -31,109 +31,19 @@ const Navbar = ({dateTime}) => {
 
                     <div className="collapse navbar-collapse order-3" id="navbarCollapse">
                         <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <a href="index3.html" className="nav-link">
-                                    Home
-                                </a>
-                            </li>
-                            <li className="nav-item">
-                                <a href="#" className="nav-link">
-                                    Contact
-                                </a>
-                            </li>
-                            <li className="nav-item dropdown">
-                                <a
-                                    id="dropdownSubMenu1"
-                                    href="#"
-                                    data-toggle="dropdown"
-                                    aria-haspopup="true"
-                                    aria-expanded="false"
-                                    className="nav-link dropdown-toggle"
-                                >
-                                    Dropdown
-                                </a>
-                                <ul
-                                    aria-labelledby="dropdownSubMenu1"
-                                    className="dropdown-menu border-0 shadow"
-                                >
-                                    <li>
-                                        <a href="#" className="dropdown-item">
-                                            Some action{" "}
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" className="dropdown-item">
-                                            Some other action
-                                        </a>
-                                    </li>
+                            {isLogged ? (<>
+                                <li className="nav-item">
+                                    <Link to={`/inventario`} href="index3.html" className="nav-link">
+                                        Inventario <i className="ri-box-3-line"></i>
+                                    </Link>
+                                </li>
+                                <li className="nav-item">
+                                    <a href="#" className="nav-link">
+                                        Contact
+                                    </a>
+                                </li>
 
-                                    <li className="dropdown-divider"></li>
-
-                                    <li className="dropdown-submenu dropdown-hover">
-                                        <a
-                                            id="dropdownSubMenu2"
-                                            href="#"
-                                            role="button"
-                                            data-toggle="dropdown"
-                                            aria-haspopup="true"
-                                            aria-expanded="false"
-                                            className="dropdown-item dropdown-toggle"
-                                        >
-                                            Hover for action
-                                        </a>
-                                        <ul
-                                            aria-labelledby="dropdownSubMenu2"
-                                            className="dropdown-menu border-0 shadow"
-                                        >
-                                            <li>
-                                                <a tabIndex="-1" href="#" className="dropdown-item">
-                                                    level 2
-                                                </a>
-                                            </li>
-
-                                            <li className="dropdown-submenu">
-                                                <a
-                                                    id="dropdownSubMenu3"
-                                                    href="#"
-                                                    role="button"
-                                                    data-toggle="dropdown"
-                                                    aria-haspopup="true"
-                                                    aria-expanded="false"
-                                                    className="dropdown-item dropdown-toggle"
-                                                >
-                                                    level 2
-                                                </a>
-                                                <ul
-                                                    aria-labelledby="dropdownSubMenu3"
-                                                    className="dropdown-menu border-0 shadow"
-                                                >
-                                                    <li>
-                                                        <a href="#" className="dropdown-item">
-                                                            3rd level
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#" className="dropdown-item">
-                                                            3rd level
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-
-                                            <li>
-                                                <a href="#" className="dropdown-item">
-                                                    level 2
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#" className="dropdown-item">
-                                                    level 2
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
+                            </>) : null}
                         </ul>
 
                         <form className="form-inline ml-0 ml-md-3">
