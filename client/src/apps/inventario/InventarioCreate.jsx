@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import CardLayout from "../../layouts/CardLayout";
 import EditDocument from "../../assets/json/EditDocument.json";
 import InventarioForm from "./InventarioForm";
@@ -35,24 +35,7 @@ const CreateComponent = () => {
 
   return (
     <>
-      {/** Aqui va el componente de la tabla */}
-      <div className="card card-info">
-        <div className="card-header">
-          <h3 className="card-title">Formulario de creación de elementos</h3>
-          <div className="card-tools">
-            <Link
-              to={`/inventario`}
-              type="button"
-              className="btn btn-outline-success btn-tool"
-            >
-              Atrás... <i className="ri-arrow-left-circle-line"></i>
-            </Link>
-          </div>
-        </div>
-        <div className="card-body">
-          <InventarioForm />
-        </div>
-      </div>
+      <InventarioForm />
     </>
   );
 };
