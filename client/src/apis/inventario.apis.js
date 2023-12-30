@@ -11,3 +11,7 @@ export const crearElemento = (elemento) => {
 export const eliminarElemento = (id) => {
     return apiv1.delete(`inventario/${id}/`);
 }
+
+export const actualizarElemento = (id, elemento) => {
+    return apiv1.put(`inventario/${id}/`, elemento);
+}
