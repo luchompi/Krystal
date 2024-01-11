@@ -4,97 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c75282d-65db-4e3d-a1b2-89593798440e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/apis/apiv1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/auth/Login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/principal/Home.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/routes/Root.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/routes/auth.routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/services/EventEmitter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/services/LoginServices.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/stores/sesion.store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/django.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Krystal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Krystal.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintrc.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apis/auth.apis.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/apis/auth.apis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apis/base.api.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apis/inventario.apis.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apps/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apps/auth/Activate.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apps/auth/ChangePassword.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apps/auth/ChangePasswordConfirm.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apps/auth/Login.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apps/auth/ProfileCreated.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apps/auth/Register.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apps/inventario/InventarioCreate.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apps/inventario/InventarioForm.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apps/inventario/InventarioList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apps/inventario/InventarioUpdate.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apps/principal/Dasboard.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apps/principal/Home.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apps/principal/PrincipalLayout.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/css/cards.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/css/cards.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Loading.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Loading.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/helpers/EventEmitter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/hooks/data.loader.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/layouts/CardLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/layouts/CardLayout.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/router/Root.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/router/auth.router.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/router/inventario.routes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/router/principal.router.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/inventario.store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/sesion.store.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/vite.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/Procfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/accounts/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/accounts/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/accounts/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/accounts/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/accounts/serializers.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/accounts/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apps/accounts/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/core/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/core/asgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/core/settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/core/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/core/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/assets/index-1f4CyHxp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/assets/index-4sK4E3Wk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/assets/react-h3aPdYU7.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/dist/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/manage.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/requirements.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="0c75282d-65db-4e3d-a1b2-89593798440e" name="Changes" comment="feat(Initial refactor): :sparkles: Refactor&#10;&#10;Se han realizado cambios globales&#10;&#10;ahora, el cliente se encuentra dentro del servidor, para facilitar deploy, de igual manera se estan realizando cambios generales" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -192,7 +102,17 @@
       <workItem from="1704753382616" duration="7102000" />
       <workItem from="1704821034481" duration="97000" />
       <workItem from="1704896816388" duration="3869000" />
+      <workItem from="1704990310269" duration="153000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(Initial refactor): :sparkles: Refactor&#10;&#10;Se han realizado cambios globales&#10;&#10;ahora, el cliente se encuentra dentro del servidor, para facilitar deploy, de igual manera se estan realizando cambios generales">
+      <option name="closed" value="true" />
+      <created>1704990390103</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704990390103</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,5 +120,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="feat(Initial refactor): :sparkles: Refactor&#10;&#10;Se han realizado cambios globales&#10;&#10;ahora, el cliente se encuentra dentro del servidor, para facilitar deploy, de igual manera se estan realizando cambios generales" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(Initial refactor): :sparkles: Refactor&#10;&#10;Se han realizado cambios globales&#10;&#10;ahora, el cliente se encuentra dentro del servidor, para facilitar deploy, de igual manera se estan realizando cambios generales" />
   </component>
 </project>
