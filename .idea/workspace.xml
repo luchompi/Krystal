@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c75282d-65db-4e3d-a1b2-89593798440e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/apis/apiv1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/auth/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/principal/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/routes/Root.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/routes/auth.routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/services/EventEmitter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/services/LoginServices.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/stores/sesion.store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/django.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Krystal.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Krystal.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.eslintrc.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/client/.eslintrc.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apis/auth.apis.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/apis/auth.apis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apis/base.api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apis/inventario.apis.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apps/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apps/auth/Activate.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apps/auth/ChangePassword.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apps/auth/ChangePasswordConfirm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apps/auth/Login.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apps/auth/ProfileCreated.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apps/auth/Register.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apps/inventario/InventarioCreate.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apps/inventario/InventarioForm.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apps/inventario/InventarioList.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apps/inventario/InventarioUpdate.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apps/principal/Dasboard.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apps/principal/Home.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apps/principal/PrincipalLayout.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/css/cards.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/css/cards.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Loading.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Loading.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/helpers/EventEmitter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/hooks/data.loader.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/layouts/CardLayout.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/layouts/CardLayout.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router/Root.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router/auth.router.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router/inventario.routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/router/principal.router.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/inventario.store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/sesion.store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/client/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/Procfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/Inventario/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/accounts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/accounts/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/accounts/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/accounts/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/accounts/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/accounts/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/apps/accounts/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/core/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/core/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/core/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/core/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/core/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/dist/assets/index-1f4CyHxp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/dist/assets/index-4sK4E3Wk.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/dist/assets/react-h3aPdYU7.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/dist/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/requirements.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2aguReTq96pGQCLqNWAv8cxcXTQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Django Server.Krystal.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;alpha&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="Krystal" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Krystal" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="core.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-50da183f06c8-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13135.95" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c75282d-65db-4e3d-a1b2-89593798440e" name="Changes" comment="" />
+      <created>1704752540846</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704752540846</updated>
+      <workItem from="1704752544460" duration="808000" />
+      <workItem from="1704753382616" duration="7102000" />
+      <workItem from="1704821034481" duration="97000" />
+      <workItem from="1704896816388" duration="3869000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
