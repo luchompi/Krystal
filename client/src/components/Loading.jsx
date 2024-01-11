@@ -1,4 +1,4 @@
-import CardLayout from "../layouts/CardLayout";
+import CardLayout from "../layouts/CardLayout.jsx";
 import Server from "../assets/json/Server.json";
 
 const Loading = () => {
