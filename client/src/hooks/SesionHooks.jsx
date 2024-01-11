@@ -1,5 +1,5 @@
 import {useNavigate} from "react-router-dom";
-import {createUser, getTokens} from "../apis/auth.apis";
+import {activateUser, createUser, getTokens} from "../apis/auth.apis";
 import sesionStore from "../stores/sesion.store";
 import {errorMessage, successMessage} from "../components/messages";
 
@@ -36,7 +36,19 @@ const SesionHook = () => {
     }
 
     const activateAccount = async (data) => {
-        console.log(data);
+        alterLoading(true);
+        await activateUser(data)
+            .then((Response) => {
+                successMessage('¡Hecho!', 'Se ha activado su cuenta, puede iniciar sesión.')
+                alterLoading(false)
+                url('/login')
+            })
+            .catch((error) => {
+                errorMessage(error)
+            })
+            .finally(() => {
+                alterLoading(false)
+            })
     };
     return {makeLogin, makeRegister, activateAccount};
 };

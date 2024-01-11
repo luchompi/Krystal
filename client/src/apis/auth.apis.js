@@ -7,3 +7,7 @@ export const getTokens = (data) => {
 export const createUser = (data) => {
     return baseApi.post('users/', data)
 }
+
+export const activateUser = (data) => {
+    return baseApi.post('users/activation/', data)
+}
