@@ -1,7 +1,7 @@
-import { createBrowserRouter } from 'react-router-dom'
+import {createBrowserRouter} from 'react-router-dom'
 
 import App from '../App'
-import authRoutes from "./auth.login.js";
+import authRoutes from "./auth.router.js";
 import principalRoutes from './principal.router.js';
 
 const Root = createBrowserRouter([

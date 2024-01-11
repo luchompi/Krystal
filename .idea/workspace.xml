@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c75282d-65db-4e3d-a1b2-89593798440e" name="Changes" comment="feat(Initial refactor): :sparkles: Refactor&#10;&#10;Se han realizado cambios globales&#10;&#10;ahora, el cliente se encuentra dentro del servidor, para facilitar deploy, de igual manera se estan realizando cambios generales" />
+    <list default="true" id="0c75282d-65db-4e3d-a1b2-89593798440e" name="Changes" comment="feat(Ver. 0.1.0.2):  ✨️ UI:&#10;&#10;Se han creado procedimientos para inicio de sesión, ello incluyen hooks, vistas y rutas">
+      <change afterPath="$PROJECT_DIR$/client/src/pages/auth/Register.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/principal/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/apis/auth.apis.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/apis/auth.apis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/hooks/SesionHooks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/hooks/SesionHooks.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routes/Root.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes/Root.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routes/auth.login.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes/auth.router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,25 +47,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Django Server.Krystal.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;alpha&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Django Server.Krystal.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "alpha",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.general",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Krystal" type="Python.DjangoServer" factoryName="Django server">
       <module name="Krystal" />
@@ -103,6 +114,8 @@
       <workItem from="1704821034481" duration="97000" />
       <workItem from="1704896816388" duration="3869000" />
       <workItem from="1704990310269" duration="153000" />
+      <workItem from="1704991535074" duration="1729000" />
+      <workItem from="1705001314295" duration="3371000" />
     </task>
     <task id="LOCAL-00001" summary="feat(Initial refactor): :sparkles: Refactor&#10;&#10;Se han realizado cambios globales&#10;&#10;ahora, el cliente se encuentra dentro del servidor, para facilitar deploy, de igual manera se estan realizando cambios generales">
       <option name="closed" value="true" />
@@ -112,7 +125,47 @@
       <option name="project" value="LOCAL" />
       <updated>1704990390103</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fix(Ver. 0.1.0.2): 🛠️ UI:&#10;&#10;index.html: se han realizado cambios en el titulo, por lo que ahora se muestra un valor predeterminado">
+      <option name="closed" value="true" />
+      <created>1705001910842</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705001910842</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fix(Ver. 0.1.0.2): ⬆️ UI:&#10;&#10;dependencias:  se han actualizado dependencias">
+      <option name="closed" value="true" />
+      <created>1705001968687</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705001968687</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(Ver. 0.1.0.2):  ✨️ UI:&#10;&#10;rutas:  se han creado rutas para el uso del proyecto">
+      <option name="closed" value="true" />
+      <created>1705002453454</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705002453454</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(Ver. 0.1.0.2):  ✨️ UI:&#10;&#10;Se han creado procedimientos para inicio de sesión, ello incluyen hooks, vistas y rutas">
+      <option name="closed" value="true" />
+      <created>1705002496031</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705002496031</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat(Ver. 0.1.0.2):  ✨️ UI:&#10;&#10;Se han creado procedimientos para inicio de sesión, ello incluyen hooks, vistas y rutas">
+      <option name="closed" value="true" />
+      <created>1705002508022</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705002508022</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +174,10 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="feat(Initial refactor): :sparkles: Refactor&#10;&#10;Se han realizado cambios globales&#10;&#10;ahora, el cliente se encuentra dentro del servidor, para facilitar deploy, de igual manera se estan realizando cambios generales" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(Initial refactor): :sparkles: Refactor&#10;&#10;Se han realizado cambios globales&#10;&#10;ahora, el cliente se encuentra dentro del servidor, para facilitar deploy, de igual manera se estan realizando cambios generales" />
+    <MESSAGE value="fix(Ver. 0.1.0.2): ️ UI:&#10;&#10;index.html: se han realizado cambios en el titulo, por lo que ahora se muestra un valor predeterminado" />
+    <MESSAGE value="fix(Ver. 0.1.0.2): ⬆️ UI:&#10;&#10;dependencias:  se han actualizado dependencias" />
+    <MESSAGE value="feat(Ver. 0.1.0.2):  ✨️ UI:&#10;&#10;rutas:  se han creado rutas para el uso del proyecto" />
+    <MESSAGE value="feat(Ver. 0.1.0.2):  ✨️ UI:&#10;&#10;Se han creado procedimientos para inicio de sesión, ello incluyen hooks, vistas y rutas" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(Ver. 0.1.0.2):  ✨️ UI:&#10;&#10;Se han creado procedimientos para inicio de sesión, ello incluyen hooks, vistas y rutas" />
   </component>
 </project>
