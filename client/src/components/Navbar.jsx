@@ -5,6 +5,7 @@ import {Link} from "react-router-dom";
 
 const Navbar = ({dateTime}) => {
     const {isLogged, userData} = sesionStore((state) => state);
+
     const salir = () => {
         successMessage("Sesión cerrada", "Sesión cerrada correctamente");
         location.reload();
@@ -161,7 +162,7 @@ const Navbar = ({dateTime}) => {
                                 <>
                                     <div className="btn-group">
                                         <button type="button" className="btn btn-success">
-                                            Sesión iniciada
+                                            Sesión iniciada como {userData?.username}
                                         </button>
                                         <button
                                             type="button"

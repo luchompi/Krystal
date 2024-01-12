@@ -1,4 +1,5 @@
 import baseApi from "./base.api";
+import sesionStore from "../stores/sesion.store";
 
 export const getTokens = (data) => {
     return baseApi.post('jwt/create/', data)
@@ -22,4 +23,14 @@ export const resetPasswordConfirm = (data) => {
 
 export const refreshToken = (data) => {
     return baseApi.post('jwt/refresh/', data)
+}
+
+export const getUserData = () => {
+    const {PAT} = sesionStore.getState()
+    return baseApi.get('users/me/', {
+        headers: {
+            'Authorization': `JWT ${PAT}`
+        }
+    })
+
 }
