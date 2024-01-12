@@ -3,11 +3,16 @@ import {
   activateUser,
   createUser,
   getTokens,
+  refreshToken,
   resetPassword,
   resetPasswordConfirm,
 } from "../apis/auth.apis";
 import sesionStore from "../stores/sesion.store";
-import { errorMessage, successMessage } from "../components/messages";
+import {
+  confirmMessage,
+  errorMessage,
+  successMessage,
+} from "../components/messages";
 
 const SesionHook = () => {
   const { setTokens, alterLoading } = sesionStore((state) => state);
@@ -97,12 +102,40 @@ const SesionHook = () => {
         alterLoading(false);
       });
   };
+
+  const requestNewPat = async () => {
+    const { RAT, setPAT, timer, logout } = sesionStore((state) => state);
+    const data = { refresh: RAT };
+    if (timer == 1500 && timer < 1800) {
+      confirmMessage(
+        "¡Atención!",
+        "Su sesión está a punto de expirar, ¿Desea renovarla?",
+        "Sí",
+        "No",
+        () => {
+          refreshToken(data)
+            .then((Response) => {
+              setPAT(Response.data);
+              successMessage("¡Hecho!", "Su sesión se ha renovado.");
+            })
+            .catch((error) => {
+              errorMessage(error);
+            });
+        },
+        () => {
+          logout();
+        }
+      );
+    }
+    timer == 1800 && logout();
+  };
   return {
     makeLogin,
     makeRegister,
     activateAccount,
     sendMailToChangePassword,
     sendNewPassword,
+    requestNewPat,
   };
 };
 

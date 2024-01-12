@@ -3,16 +3,23 @@ import { useEffect, useState } from "react";
 import Navbar from "./components/Navbar.jsx";
 import sesionStore from "./stores/sesion.store.js";
 import Loading from "./components/Loading.jsx";
+import SesionHook from "./hooks/SesionHooks.jsx";
 
 const App = () => {
   const [dateTime, setDateTime] = useState("");
-  const { loading } = sesionStore((state) => state);
+  const { loading, isLogged, timer, incrementTimer } = sesionStore(
+    (state) => state
+  );
+  const { requestNewPat } = SesionHook();
+  requestNewPat();
   useEffect(() => {
     const interval = setInterval(() => {
       setDateTime(new Date().toLocaleString());
+      isLogged && incrementTimer();
+      console.log(timer);
     }, 1000);
     return () => clearInterval(interval);
-  }, []);
+  }, [incrementTimer, isLogged, timer, requestNewPat]);
   return (
     <>
       <Navbar dateTime={dateTime} />

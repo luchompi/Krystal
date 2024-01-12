@@ -19,3 +19,7 @@ export const resetPassword = (data) => {
 export const resetPasswordConfirm = (data) => {
     return baseApi.post('users/reset_password_confirm/', data)
 }
+
+export const refreshToken = (data) => {
+    return baseApi.post('jwt/refresh/', data)
+}

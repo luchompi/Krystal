@@ -39,7 +39,7 @@ export const errorMessage = (error) => {
 }
 
 
-export const confirmMessage = (title, message, confirmButtonText, cancelButtonText, callback) => {
+export const confirmMessage = (title, message, confirmButtonText, cancelButtonText, callback, logoutCallback) => {
     return Swal.fire({
         title: title,
         text: message,
@@ -51,7 +51,14 @@ export const confirmMessage = (title, message, confirmButtonText, cancelButtonTe
         allowEscapeKey: false,
         allowEnterKey: false
     }).then((result) => {
-        return result.isConfirmed
+        if (result.isConfirmed) {
+            callback()
+        }
+        else {
+            logoutCallback()
+            location.reload()
+        }
+
     })
 }
 
