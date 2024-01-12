@@ -3,6 +3,7 @@ import Fingerprint from "../../assets/json/Fingerprint.json";
 import { useState } from "react";
 import SesionHook from "../../hooks/SesionHooks";
 import { Link } from "react-router-dom";
+import { RedirectIfAuth } from "../../hooks/SesionRedirector";
 
 const LoginForm = () => {
   const { makeLogin } = SesionHook();
@@ -77,6 +78,7 @@ const LoginForm = () => {
 };
 
 const Login = () => {
+  RedirectIfAuth();
   return (
     <div className="col col-lg-5">
       <CardLayout
