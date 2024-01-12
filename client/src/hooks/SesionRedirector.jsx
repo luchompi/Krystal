@@ -6,7 +6,7 @@ export const RedirectIfAuth = () => {
   const { isLogged } = sesionStore((state) => state);
   const url = useNavigate();
   useEffect(() => {
-    isLogged ? url("/dasboard") : null;
+    isLogged ? url("/dashboard") : null;
   });
   return <div />;
 };
