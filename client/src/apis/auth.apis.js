@@ -11,3 +11,11 @@ export const createUser = (data) => {
 export const activateUser = (data) => {
     return baseApi.post('users/activation/', data)
 }
+
+export const resetPassword = (data) => {
+    return baseApi.post('users/reset_password/', data)
+}
+
+export const resetPasswordConfirm = (data) => {
+    return baseApi.post('users/reset_password_confirm/', data)
+}

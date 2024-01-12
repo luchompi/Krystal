@@ -2,6 +2,7 @@ import CardLayout from "../../layouts/CardLayout";
 import Fingerprint from "../../assets/json/Fingerprint.json";
 import { useState } from "react";
 import SesionHook from "../../hooks/SesionHooks";
+import { Link } from "react-router-dom";
 
 const LoginForm = () => {
   const { makeLogin } = SesionHook();
@@ -59,9 +60,13 @@ const LoginForm = () => {
                 <button type="submit" className="btn btn-primary">
                   Iniciar sesión
                 </button>
-                <button type="button" className="btn secondary">
+                <Link
+                  to={`/forgot-password`}
+                  type="button"
+                  className="btn secondary"
+                >
                   ¿Olvidó su contraseña?
-                </button>
+                </Link>
               </div>
             </form>
           </div>
