@@ -11,15 +11,12 @@ const App = () => {
         (state) => state
     );
     const {requestNewPat, getUserInfo} = SesionHook();
-
     getUserInfo()
-
     requestNewPat();
     useEffect(() => {
         const interval = setInterval(() => {
             setDateTime(new Date().toLocaleString());
             isLogged && incrementTimer();
-            console.log(timer);
         }, 1000);
         return () => clearInterval(interval);
     }, [incrementTimer, isLogged, timer, requestNewPat]);
