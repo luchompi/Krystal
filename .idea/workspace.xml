@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c75282d-65db-4e3d-a1b2-89593798440e" name="Changes" comment="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;se ha eliminado dockerfile">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="0c75282d-65db-4e3d-a1b2-89593798440e" name="Changes" comment="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;se ha añadido dockerfile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/railway.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705164787372</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;se ha añadido dockerfile">
+      <option name="closed" value="true" />
+      <created>1705164893092</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1705164893092</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +259,7 @@
     <MESSAGE value="fix(Ver. 0.1.0.2) ⚰️UI - App.jsx : &#10;&#10;Se ha eliminado console.log" />
     <MESSAGE value="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;&#10;Se añadido a la aplicación de inventario, hook que permite redireccionar a login si la sesión no se encuentra activa." />
     <MESSAGE value="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;se ha eliminado dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;se ha eliminado dockerfile" />
+    <MESSAGE value="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;se ha añadido dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;se ha añadido dockerfile" />
   </component>
 </project>
