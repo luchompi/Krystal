@@ -1,13 +1,14 @@
+import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import EventEmitter from "../../services/EventEmitter";
-const Form = () => {
+const Form = ({ producto }) => {
   const [data, setData] = useState({
-    nombre: "",
-    cantidad: 0,
-    precio: 0,
-    precio_unitario: 0,
-    precio_venta: 0,
-    ganancia: 0,
+    nombre: producto.nombre || "",
+    cantidad: producto.cantidad || 0,
+    precio: producto.precio || 0,
+    precio_unitario: producto.precio_unitario || 0,
+    precio_venta: producto.precio_venta || 0,
+    ganancia: producto.ganancia || 0,
   });
 
   const handleInput = (e) => {
@@ -27,7 +28,9 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    EventEmitter.emit("create", data);
+    producto
+      ? EventEmitter.emit("update", data)
+      : EventEmitter.emit("create", data);
   };
 
   return (
@@ -45,6 +48,7 @@ const Form = () => {
           placeholder="nombre del producto"
           required
           onInput={handleInput}
+          value={data.nombre}
         />
       </div>
       <div className="row">
@@ -63,6 +67,7 @@ const Form = () => {
               required
               min={0}
               onChange={handleInput}
+              value={data.cantidad}
             />
           </div>
         </div>
@@ -81,6 +86,7 @@ const Form = () => {
               required
               min={0}
               onChange={handleInput}
+              value={data.precio}
             />
           </div>
         </div>
@@ -115,6 +121,7 @@ const Form = () => {
               required
               min={0}
               onInput={handleInput}
+              value={data.precio_venta}
             />
           </div>
         </div>
@@ -156,6 +163,10 @@ const Form = () => {
       </span>
     </form>
   );
+};
+
+Form.propTypes = {
+  producto: PropTypes.object,
 };
 
 export default Form;

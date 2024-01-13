@@ -27,3 +27,13 @@ export const deleteElement = (id) => {
         }
     })
 }
+
+export const updateElement = (id, data) => {
+    const { PAT } = sesionStore.getState()
+    return baseApi.put(`inventario/${id}/`, data,
+        {
+            headers: {
+                Authorization: `JWT ${PAT}`
+            }
+        })
+}

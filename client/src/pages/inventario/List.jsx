@@ -42,9 +42,13 @@ const ListComponent = () => {
                           role="group"
                           aria-label="Basic example"
                         >
-                          <button type="button" className="btn btn-warning">
+                          <Link
+                            to={`/inventario/editar/${item.id}`}
+                            type="button"
+                            className="btn btn-warning"
+                          >
                             <i className="ri-pencil-line"></i>
-                          </button>
+                          </Link>
                           <button
                             type="button"
                             className="btn btn-danger"
