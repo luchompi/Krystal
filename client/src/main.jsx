@@ -8,7 +8,5 @@ import "admin-lte/plugins/bootstrap/js/bootstrap.bundle.js";
 import "remixicon/fonts/remixicon.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={Root} />
-  </React.StrictMode>
+  <RouterProvider router={Root} />
 );

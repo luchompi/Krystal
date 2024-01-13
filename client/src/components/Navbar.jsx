@@ -33,9 +33,9 @@ const Navbar = ({ dateTime }) => {
           <div className="collapse navbar-collapse order-3" id="navbarCollapse">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a href="index3.html" className="nav-link">
-                  Home
-                </a>
+                <Link to={`/inventario`} className="nav-link">
+                  Inventario
+                </Link>
               </li>
               <li className="nav-item">
                 <a href="#" className="nav-link">
