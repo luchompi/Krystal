@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c75282d-65db-4e3d-a1b2-89593798440e" name="Changes" comment="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;&#10;Se añadido a la aplicación de inventario, hook que permite redireccionar a login si la sesión no se encuentra activa.">
-      <change afterPath="$PROJECT_DIR$/railway.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0190a258-8f36-4837-ad33-cb45a96f6f59.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0190a258-8f36-4837-ad33-cb45a96f6f59.xml" afterDir="false" />
+    <list default="true" id="0c75282d-65db-4e3d-a1b2-89593798440e" name="Changes" comment="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;se ha eliminado dockerfile">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +52,7 @@
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "alpha",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -214,7 +213,23 @@
       <option name="project" value="LOCAL" />
       <updated>1705160809431</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;&#10;Se añadido a la aplicación de inventario, hook que permite redireccionar a login si la sesión no se encuentra activa.">
+      <option name="closed" value="true" />
+      <created>1705163648183</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1705163648183</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;se ha eliminado dockerfile">
+      <option name="closed" value="true" />
+      <created>1705164787372</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705164787372</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,6 +248,7 @@
     <MESSAGE value="feat(Ver. 0.1.0.2): ✨ UI - Inventario:&#10;&#10;Se ha creado procedimiento que permite actualizar inventario" />
     <MESSAGE value="fix(Ver. 0.1.0.2) ⚰️UI - App.jsx : &#10;&#10;Se ha eliminado console.log" />
     <MESSAGE value="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;&#10;Se añadido a la aplicación de inventario, hook que permite redireccionar a login si la sesión no se encuentra activa." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;&#10;Se añadido a la aplicación de inventario, hook que permite redireccionar a login si la sesión no se encuentra activa." />
+    <MESSAGE value="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;se ha eliminado dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;se ha eliminado dockerfile" />
   </component>
 </project>
