@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c75282d-65db-4e3d-a1b2-89593798440e" name="Changes" comment="feat(Ver. 0.1.0.2): ✨ UI:&#10;&#10;Se ha creado procedimiento de activación de cuenta">
-      <change afterPath="$PROJECT_DIR$/client/src/hooks/InventarioHook.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/inventario/Create.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/inventario/Form.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/inventario/List.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/inventario/Update.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/stores/inventario.store.js" afterDir="false" />
+    <list default="true" id="0c75282d-65db-4e3d-a1b2-89593798440e" name="Changes" comment="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;&#10;Se añadido a la aplicación de inventario, hook que permite redireccionar a login si la sesión no se encuentra activa.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apis/auth.apis.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/apis/auth.apis.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/hooks/SesionHooks.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/hooks/SesionHooks.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/principal/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/principal/Dashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/stores/sesion.store.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/sesion.store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +110,7 @@
       <workItem from="1704991535074" duration="1729000" />
       <workItem from="1705001314295" duration="6511000" />
       <workItem from="1705086310096" duration="3738000" />
+      <workItem from="1705159785152" duration="1730000" />
     </task>
     <task id="LOCAL-00001" summary="feat(Initial refactor): :sparkles: Refactor&#10;&#10;Se han realizado cambios globales&#10;&#10;ahora, el cliente se encuentra dentro del servidor, para facilitar deploy, de igual manera se estan realizando cambios generales">
       <option name="closed" value="true" />
@@ -194,7 +184,31 @@
       <option name="project" value="LOCAL" />
       <updated>1705007746546</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat(Ver. 0.1.0.2): ✨ UI - Inventario:&#10;&#10;Se ha creado procedimiento que permite actualizar inventario">
+      <option name="closed" value="true" />
+      <created>1705160469819</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705160469820</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fix(Ver. 0.1.0.2) ⚰️UI - App.jsx : &#10;&#10;Se ha eliminado console.log">
+      <option name="closed" value="true" />
+      <created>1705160578733</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1705160578733</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;&#10;Se añadido a la aplicación de inventario, hook que permite redireccionar a login si la sesión no se encuentra activa.">
+      <option name="closed" value="true" />
+      <created>1705160809431</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1705160809431</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,6 +224,9 @@
     <MESSAGE value="feat(Ver. 0.1.0.2):  ✨️ UI:&#10;&#10;Se han creado procedimientos para registro de usuarios, ello incluyen hooks, vistas y rutas" />
     <MESSAGE value="fix(Ver. 0.1.0.2): ️ UI:&#10;&#10;Se han cambiado nombre de asset." />
     <MESSAGE value="feat(Ver. 0.1.0.2): ✨ UI:&#10;&#10;Se ha creado procedimiento de activación de cuenta" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(Ver. 0.1.0.2): ✨ UI:&#10;&#10;Se ha creado procedimiento de activación de cuenta" />
+    <MESSAGE value="feat(Ver. 0.1.0.2): ✨ UI - Inventario:&#10;&#10;Se ha creado procedimiento que permite actualizar inventario" />
+    <MESSAGE value="fix(Ver. 0.1.0.2) ⚰️UI - App.jsx : &#10;&#10;Se ha eliminado console.log" />
+    <MESSAGE value="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;&#10;Se añadido a la aplicación de inventario, hook que permite redireccionar a login si la sesión no se encuentra activa." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix(Ver. 0.1.0.2) ✨UI - Redirección de sesión:&#10;&#10;Se añadido a la aplicación de inventario, hook que permite redireccionar a login si la sesión no se encuentra activa." />
   </component>
 </project>
