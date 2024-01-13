@@ -28,8 +28,9 @@ const Form = ({producto = {}}) => {
     }, [data.precio, data.cantidad, data.precio_venta, data.precio_unitario]);
 
     const handleSubmit = (e) => {
+
         e.preventDefault();
-        producto
+        producto.id
             ? EventEmitter.emit("update", data)
             : EventEmitter.emit("create", data);
     };
