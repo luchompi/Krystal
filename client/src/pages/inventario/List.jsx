@@ -3,8 +3,10 @@ import inventarioStore from "../../stores/inventario.store";
 import CardLayout from "../../layouts/CardLayout";
 import Chart from "../../assets/json/Chart.json";
 import { Link } from "react-router-dom";
+import InventarioHook from "../../hooks/InventarioHook";
 const ListComponent = () => {
   const { inventario } = inventarioStore((state) => state);
+  const { eliminarElemento } = InventarioHook();
   return (
     <>
       <div className="card">
@@ -43,7 +45,13 @@ const ListComponent = () => {
                           <button type="button" className="btn btn-warning">
                             <i className="ri-pencil-line"></i>
                           </button>
-                          <button type="button" className="btn btn-danger">
+                          <button
+                            type="button"
+                            className="btn btn-danger"
+                            onClick={() => {
+                              eliminarElemento(item.id);
+                            }}
+                          >
                             <i className="ri-delete-bin-line"></i>
                           </button>
                         </div>

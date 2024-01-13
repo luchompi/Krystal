@@ -39,7 +39,7 @@ export const errorMessage = (error) => {
 }
 
 
-export const confirmMessage = (title, message, confirmButtonText, cancelButtonText, callback, logoutCallback) => {
+export const confirmMessage = (title, message, confirmButtonText, cancelButtonText, callback, secondaryCallback) => {
     return Swal.fire({
         title: title,
         text: message,
@@ -55,8 +55,7 @@ export const confirmMessage = (title, message, confirmButtonText, cancelButtonTe
             callback()
         }
         else {
-            logoutCallback()
-            location.reload()
+            secondaryCallback() | null
         }
 
     })

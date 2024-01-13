@@ -18,3 +18,12 @@ export const saveElement = (data) => {
         }
     })
 }
+
+export const deleteElement = (id) => {
+    const { PAT } = sesionStore.getState()
+    return baseApi.delete(`inventario/${id}/`, {
+        headers: {
+            Authorization: `JWT ${PAT}`
+        }
+    })
+}
