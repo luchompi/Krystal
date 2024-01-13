@@ -7,7 +7,8 @@ class Inventario(models.Model):
     nombre = models.CharField(max_length=500)
     cantidad = models.IntegerField()
     precio = models.IntegerField()
-    precio_unitario = models.IntegerField()
+    precio_unitario = models.DecimalField(
+        decimal_places=2, default=0.00, max_digits=10)
     precio_venta = models.IntegerField(default=0)
     ganancia = models.DecimalField(
         decimal_places=2, default=0.00, max_digits=10)
