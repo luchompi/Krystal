@@ -87,14 +87,14 @@ const NavButtons = () => {
   wb.SheetNames.push("Inventario", "Inventario general");
   let ws_data = [];
   let ws_general = [];
-  ws_data.push(["Código", "Nombre", "Cantidad", "Stock actual"]);
+  ws_data.push(["Código", "Nombre", "Cantidad", "Stock"]);
   ws_general.push([
     "Código",
     "Nombre",
     "Cantidad",
     "Precio",
-    "Precio unitario",
-    "Precio de venta",
+    "Unidad",
+    "Venta",
     "Ganancia",
   ]);
   inventario.forEach((item) => {
@@ -115,24 +115,26 @@ const NavButtons = () => {
   return (
     <>
       <div className="card-tools">
-        <Link
-          to={`/inventario/nuevo`}
-          type="button"
-          className="btn btn-outline-primary"
-        >
-          Añadir
-          <i className="ri-file-add-line"></i>
-        </Link>
-        <button
-          onClick={() => {
-            XLSX.writeFile(wb, "Inventario.xlsx");
-          }}
-          type="button"
-          className="btn btn-outline-success"
-        >
-          Exportar
-          <i className="ri-file-download-line"></i>
-        </button>
+        <div className="btn-group" role="group" aria-label="Basic example">
+          <Link
+            to={`/inventario/nuevo`}
+            type="button"
+            className="btn btn-outline-primary"
+          >
+            Añadir
+            <i className="ri-file-add-line"></i>
+          </Link>
+          <button
+            onClick={() => {
+              XLSX.writeFile(wb, "Inventario.xlsx");
+            }}
+            type="button"
+            className="btn btn-outline-success"
+          >
+            Exportar
+            <i className="ri-file-download-line"></i>
+          </button>
+        </div>
       </div>
     </>
   );
