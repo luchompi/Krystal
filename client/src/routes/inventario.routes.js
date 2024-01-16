@@ -1,6 +1,8 @@
 import List from "../pages/inventario/List";
 import Create from "../pages/inventario/Create";
 import Update from "../pages/inventario/Update";
+import FileUpload from "../pages/inventario/FileUpload";
+
 const inventarioRoutes = [
     {
         path: "/inventario",
@@ -14,6 +16,10 @@ const inventarioRoutes = [
     {
         path: "/inventario/editar/:id",
         Component: Update,
+    },
+    {
+        path: "/inventario/actualizar-por-archivo",
+        Component: FileUpload,
     }
 ]
 

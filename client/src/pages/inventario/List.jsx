@@ -1,4 +1,4 @@
-import React from "react";
+import * as XLSX from "xlsx";
 import inventarioStore from "../../stores/inventario.store";
 import CardLayout from "../../layouts/CardLayout";
 import Chart from "../../assets/json/Chart.json";
@@ -75,18 +75,71 @@ const ListComponent = () => {
 };
 
 const NavButtons = () => {
-    RedirectIfAuthRequired()
+    RedirectIfAuthRequired();
+    const {inventario} = inventarioStore((state) => state);
+    let wb = XLSX.utils.book_new();
+    wb.Props = {
+        Title: "Inventario",
+        Subject: "Inventario",
+        Author: "Sistema de inventario",
+        CreatedDate: new Date().toLocaleString(),
+    };
+    wb.SheetNames.push("Inventario", "Inventario general");
+    let ws_data = [];
+    let ws_general = [];
+    ws_data.push(["Código", "Nombre", "Cantidad", "Stock"]);
+    ws_general.push([
+        "Cod",
+        "Nombre",
+        "Cantidad",
+        "Precio",
+        "Unidad",
+        "Venta",
+        "Ganancia",
+    ]);
+    inventario.forEach((item) => {
+        ws_data.push([item.id, item.nombre, item.cantidad]);
+        ws_general.push([
+            item.id,
+            item.nombre,
+            item.cantidad,
+            item.precio,
+            item.precio_unitario,
+            item.precio_venta,
+            item.ganancia,
+        ]);
+    });
+    let ws = XLSX.utils.aoa_to_sheet(ws_data);
+    wb.Sheets["Inventario"] = ws;
+    wb.Sheets["Inventario general"] = XLSX.utils.aoa_to_sheet(ws_general);
     return (
         <>
             <div className="card-tools">
-                <Link
-                    to={`/inventario/nuevo`}
-                    type="button"
-                    className="btn btn-outline-primary"
-                >
-                    Añadir
-                    <i className="ri-file-add-line"></i>
-                </Link>
+                <div className="btn-group" role="group" aria-label="Basic example">
+                    <Link
+                        to={`/inventario/nuevo`}
+                        type="button"
+                        className="btn btn-outline-primary"
+                    >
+                        Añadir
+                        <i className="ri-file-add-line"></i>
+                    </Link>
+                    <button
+                        onClick={() => {
+                            XLSX.writeFile(wb, "Inventario.xlsx");
+                        }}
+                        type="button"
+                        className="btn btn-outline-success"
+                    >
+                        Exportar
+                        <i className="ri-file-download-line"></i>
+                    </button>
+
+                    <Link to={`/inventario/actualizar-por-archivo`} type="button" className="btn btn-outline-info">
+                        Carga masiva
+                        <i className="ri-file-upload-line"></i>
+                    </Link>
+                </div>
             </div>
         </>
     );

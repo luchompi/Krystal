@@ -33,11 +33,11 @@ class InventarioController(APIView):
         serializer = InventarioSerializer(data=data)
         if serializer.is_valid():
             serializer.save()
-            print('saved')
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-    def put(self, request, id, *args, **kwargs):
+    def put(self, request, id=None, *args, **kwargs):
+
         if queryset := self.get_elemento(id):
             serializer = InventarioSerializer(
                 queryset, data=request.data, partial=True)
@@ -45,6 +45,25 @@ class InventarioController(APIView):
                 serializer.save()
                 return Response(serializer.data, status=status.HTTP_200_OK)
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        else:
+            data = request.data.copy()
+            for item in data:
+                if queryset := self.get_elemento(item['Código']) and item['Stock'] > 0:
+                    dif = item['Cantidad'] - item['Stock']
+                    element = {
+                        'id': item['Código'],
+                        'nombre': item['Nombre'],
+                        'cantidad': max(dif, 0),
+                    }
+                    serializer = InventarioSerializer(data=element)
+                    queryset = Inventario.objects.get(id=item['Código'])
+                    serializer = InventarioSerializer(
+                        queryset, data=element, partial=True)
+                    if serializer.is_valid():
+                        serializer.save()
+                    else:
+                        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+                return Response(status=status.HTTP_200_OK)
 
     def delete(self, request, *args, **kwargs):
         if instance := self.get_elemento(kwargs['id']):

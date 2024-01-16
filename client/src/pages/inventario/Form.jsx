@@ -1,7 +1,8 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
 import EventEmitter from "../../services/EventEmitter";
-const Form = ({ producto }) => {
+
+const Form = ({ producto = {} }) => {
   const [data, setData] = useState({
     nombre: producto.nombre || "",
     cantidad: producto.cantidad || 0,
@@ -28,7 +29,7 @@ const Form = ({ producto }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    producto
+    producto.id
       ? EventEmitter.emit("update", data)
       : EventEmitter.emit("create", data);
   };
@@ -56,7 +57,7 @@ const Form = ({ producto }) => {
           {/*Cantidad de producto*/}
           <div className="form-group">
             <label htmlFor="cantidad">
-              Cantidad de producto <i className="ri-key-line"></i>
+              Cantidad de producto <i className="ri-hashtag"></i>
             </label>
             <input
               type="number"
@@ -75,7 +76,8 @@ const Form = ({ producto }) => {
           {/*Precio de compra*/}
           <div className="form-group">
             <label htmlFor="precio_compra">
-              Precio de compra <i className="ri-key-line"></i>
+              Precio de compra del lote{" "}
+              <i className="ri-money-dollar-box-line"></i>
             </label>
             <input
               type="number"
@@ -110,7 +112,8 @@ const Form = ({ producto }) => {
         <div className="col col-lg-6">
           <div className="form-group">
             <label htmlFor="precio_venta">
-              Precio de venta de producto <i className="ri-key-line"></i>
+              Precio de venta de producto{" "}
+              <i className="ri-money-dollar-box-line"></i>
             </label>
             <input
               type="number"
