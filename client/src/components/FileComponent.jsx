@@ -21,7 +21,9 @@ const FileComponent = ({ loadType }) => {
         const excelRows = XLSX.utils.sheet_to_row_object_array(
           loadType === "create"
             ? workbook.Sheets[firstSheet]
-            : workbook.Sheets[secondSheet]
+            : loadType === "update"
+            ? workbook.Sheets[secondSheet]
+            : null
         );
         EventEmitter.emit("loadData", excelRows);
       };
