@@ -24,7 +24,7 @@ const CreateForm = () => {
 };
 
 const Create = () => {
-    RedirectIfAuthRequired()
+    RedirectIfAuthRequired();
     return (
         <div className="col col-lg-6">
             <CardLayout

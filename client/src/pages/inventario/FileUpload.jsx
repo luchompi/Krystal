@@ -4,6 +4,7 @@ import FileComponent from "../../components/FileComponent";
 import { useEffect, useState } from "react";
 import EventEmitter from "../../services/EventEmitter";
 import ElementTable from "../../components/ElementTable";
+
 const FileUpload = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -15,12 +16,12 @@ const FileUpload = () => {
     <div className="col col-lg-7">
       <CardLayout
         icon={Book}
-        header={"Carga masiva de productos"}
-        title={"Módulo de carga de inventario"}
+        header={"Actualización masiva de productos"}
+        title={"Cargar datos desde excel"}
         component={
           <>
             <FileComponent loadType={"create"} />
-            {data && data.length > 0 && <ElementTable data={data} />}
+            {data && data.length > 0 ? <ElementTable data={data} /> : null}
           </>
         }
       />
