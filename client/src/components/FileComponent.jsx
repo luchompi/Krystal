@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import * as XLSX from "xlsx";
 import EventEmitter from "../services/EventEmitter";
 import PropTypes from "prop-types";
+
 const FileComponent = ({ loadType }) => {
   const [file, setFile] = useState(null);
 
@@ -28,6 +29,8 @@ const FileComponent = ({ loadType }) => {
         console.log(ex);
       };
       reader.readAsBinaryString(file);
+    } else {
+      EventEmitter.emit("loadData", []);
     }
   }, [file, loadType]);
 
@@ -35,7 +38,6 @@ const FileComponent = ({ loadType }) => {
     <>
       <div className="card">
         <div className="card-body">
-          <h5 className="card-title">Módulo de carga</h5>
           <div className="card-text">
             {file ? (
               <div className="alert alert-success alert-dismissible">
