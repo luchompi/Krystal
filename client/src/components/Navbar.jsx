@@ -14,10 +14,10 @@ const Navbar = ({dateTime}) => {
       <>
         <nav className=" navbar navbar-expand-md navbar-dark navbar-dark">
           <div className="container">
+            {isLogged && (<>
             <Link to={`/dashboard`} className="navbar-brand">
               <span className="brand-text font-weight-light">Home</span>
             </Link>
-
             <button
               className="navbar-toggler order-1"
               type="button"
@@ -39,6 +39,8 @@ const Navbar = ({dateTime}) => {
                 </li>
               </ul>
             </div>
+
+            </>)}
 
             <ul className="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
               <li className="nav-item">
