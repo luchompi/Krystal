@@ -2,6 +2,8 @@ import List from "../pages/inventario/List";
 import Create from "../pages/inventario/Create";
 import Update from "../pages/inventario/Update";
 import FileUpload from "../pages/inventario/FileUpload";
+import LowUnits from "../pages/inventario/LowUnits";
+import NoUnits from "../pages/inventario/NoUnits";
 
 const inventarioRoutes = [
     {
@@ -20,6 +22,14 @@ const inventarioRoutes = [
     {
         path: "/inventario/actualizar-por-archivo",
         Component: FileUpload,
+    },
+    {
+        path: "/inventario/pocas-unidades",
+        Component: LowUnits
+    },
+    {
+        path: "/inventario/sin-unidades",
+        Component: NoUnits
     }
 ]
 
