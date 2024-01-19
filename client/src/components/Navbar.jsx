@@ -15,11 +15,12 @@ const Navbar = ({dateTime}) => {
         <nav className=" navbar navbar-expand-md navbar-dark navbar-dark">
           <div className="container">
             {isLogged && (<>
-            <Link to={`/dashboard`} className="navbar-brand">
-              <span className="brand-text font-weight-light">Home</span>
-            </Link>
-            <button
-              className="navbar-toggler order-1"
+              <Link to={`/dashboard`} className="navbar-brand">
+                <span className="brand-text font-weight-light">Home </span>
+                <i className="ri-home-office-fill"></i>
+              </Link>
+              <button
+                className="navbar-toggler order-1"
               type="button"
               data-toggle="collapse"
               data-target="#navbarCollapse"
@@ -34,7 +35,7 @@ const Navbar = ({dateTime}) => {
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <Link to={`/inventario`} className="nav-link">
-                    Inventario
+                    Inventario <i className="ri-stock-line"></i>
                   </Link>
                 </li>
               </ul>

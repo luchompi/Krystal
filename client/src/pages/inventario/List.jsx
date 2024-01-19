@@ -136,7 +136,7 @@ const NavButtons = () => {
                     </button>
 
                     <Link to={`/inventario/actualizar-por-archivo`} type="button" className="btn btn-outline-info">
-                        Carga masiva
+                        Actualización masiva
                         <i className="ri-file-upload-line"></i>
                     </Link>
                 </div>
