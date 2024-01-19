@@ -35,6 +35,9 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt',
     'djoser',
     'whitenoise',
+    # LocalApps
+    'apps.accounts',
+    'apps.Inventario',
 ]
 
 MIDDLEWARE = [
