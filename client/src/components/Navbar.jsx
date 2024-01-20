@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import {successMessage} from "./messages";
 import sesionStore from "../stores/sesion.store";
 import {Link} from "react-router-dom";
+import CircularProgressBar from "./CircularProgressBar.jsx";
 
 const Navbar = ({dateTime}) => {
     const {isLogged, userData} = sesionStore((state) => state);
@@ -99,6 +100,7 @@ const Navbar = ({dateTime}) => {
               </li>
             </ul>
           </div>
+          {isLogged && (<CircularProgressBar />)}
         </nav>
         <header className="py-1 mb-0 border-bottom">
           <div className="container d-flex flex-wrap justify-content-center">
@@ -108,7 +110,6 @@ const Navbar = ({dateTime}) => {
             </p>
           </div>
         </header>
-
       </>
     );
 };
