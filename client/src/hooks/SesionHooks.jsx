@@ -122,7 +122,7 @@ const SesionHook = () => {
   const requestNewPat = async () => {
     const { RAT, setPAT, timer, logout } = sesionStore((state) => state);
     const data = { refresh: RAT };
-    if (timer == 1500000 && timer < 1800000) {
+    if (timer === 1500 && timer < 1800) {
       confirmMessage(
         "¡Atención!",
         "Su sesión está a punto de expirar, ¿Desea renovarla?",
@@ -143,7 +143,7 @@ const SesionHook = () => {
         }
       );
     }
-    timer == 1800000 && logout();
+    timer === 1800000 && logout();
   };
   return {
     makeLogin,
